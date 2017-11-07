@@ -1,9 +1,44 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <link rel="stylesheet" href="stylesheet.css">
+  <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One" rel="stylesheet">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/partyhard.js"></script>
 <title>Dear god help me I am dying on the inside</title>
 </head>
 <body>
-<h1>Dear god help me I am dying on the inside</h1>
+<h1 id="foo">Dear god help me I am dying on the inside</h1>
+<center><button id="hidden">Yikes, back to depression!</button></center>
+<script>
+  $(document).on('ready', function() {
+$('#hidden').hide();
+$('#foo').click(function(){
+  $('body').css({
+    'background-image':'url("https://media.giphy.com/media/hsBZfDG7wiWHu/giphy.gif")'
+  });
+  $('#foo').css({
+    'color':'white',
+    'font-size':'75px',
+    'font-family': "'Julius Sans One', sans-serif"
+  });
+  $('#foo').html('<center>Dear god help me I am PARTYING HARD!</center>');
+  $('#hidden').show();
+});
+
+$('#hidden').click(function(){
+  $('body').css({
+    'background-image':''
+  });
+  $('#foo').css({
+    'color':'',
+    'font-size':'',
+    'font-family': ''
+  });
+  $('#hidden').hide();
+    $('#foo').html('Dear god help me I am dying on the inside');
+});
+});
+</script>
 </body>
 </html>

@@ -1,0 +1,26 @@
+h1{
+  color: black;
+}
+
+h1:hover{
+  color: green;
+  cursor: pointer;
+}
+
+body{
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#hidden{
+  border-style: none;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border-radius: 0px;
+}
+#hidden:hover{
+  cursor: pointer;
+  background-color: white;
+  color: black;
+}
